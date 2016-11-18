@@ -1,0 +1,21 @@
+{
+  "name": "simple-http",
+  "description": "This is a simple http request project.",
+  "main": "index.js",
+  "authors": [
+    "Ron Bravo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2"
+  }
+}

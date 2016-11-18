@@ -1,0 +1,41 @@
+<h2>Posts</h2>
+
+<button ng-click="postController.getPostList ()">Get Post List</button>
+
+<!-- List out the post objects -->
+<ul>
+    <li ng-repeat="post in postController.postList">
+        <div class="post">
+            <div>
+                <strong>title:</strong> {{ post.title }}
+                <strong>description:</strong> {{ post.description }}
+                <strong>author:</strong> {{ post.author }}
+
+                <button ng-click="postController.deletePost (post.id)">Delete Post</button>
+
+                <button ng-click="postController.editPost (post.id)">Edit Post</button>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<button ng-click="postController.getPost ()">Get A Single Post</button>
+<button ng-click="postController.getPost (1)">Get Post 1</button>
+<button ng-click="postController.getPost (2)">Get Post 2</button>
+<button ng-click="postController.getPost (3)">Get Post 3</button>
+
+<!-- Show the details of the currently selected item. -->
+<div>
+    <strong>title:</strong> {{ postController.currentPost.title }}
+    <strong>description:</strong> {{ postController.currentPost.description }}
+    <strong>author:</strong> {{ postController.currentPost.author }}
+</div>
+
+
+
+<form ng-submit="postController.save ()">
+    <input name="title" ng-model="postController.title"> <br>
+    <input name="description" ng-model="postController.description"> <br>
+    <input name="author" ng-model="postController.author"> <br>
+    <button type="submit">Save Post</button>
+</form>

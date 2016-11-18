@@ -1,0 +1,22 @@
+{
+  "test": {
+    "message": "This is a simple message"
+  },
+  "someroute": {
+    "message": "You have hit the test route."
+  },
+  "posts": [
+    {
+      "title": "Sample Post 1",
+      "description": "some sample text",
+      "author": "ron bravo AFDSFS",
+      "id": 8
+    },
+    {
+      "title": 1,
+      "description": 2,
+      "author": 3,
+      "id": 10
+    }
+  ]
+}

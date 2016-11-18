@@ -1,0 +1,19 @@
+body {
+    background-color: #dadada;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #878787;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.post input {
+    display: none;
+}
+
+.post.edit input {
+    display: inline-block;
+}
